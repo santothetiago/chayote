@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered optimization for Chayote (Sechium Edule) growth and production">
+    <title>UAOCGP | AI-Powered Chayote Farming</title>
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#8BC34A',
+                        dark: '#1A2E35',
+                        light: '#F5F7F6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.9) 0%, rgba(139, 195, 74, 0.9) 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        .researcher-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="https://huggingface.co/spaces/santothetiago/chayote-ai-cultivator-pro/resolve/main/images/images%20(1).jpg" alt="UAOCGP Logo" class="h-8 w-8 rounded-full">
+                    <span class="text-xl font-bold text-primary">UAOCGP</span>
+</div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-dark hover:text-primary transition">Home</a>
+                    <a href="#features" class="text-dark hover:text-primary transition">Features</a>
+                    <a href="#how-it-works" class="text-dark hover:text-primary transition">How It Works</a>
+<a href="#researchers" class="text-dark hover:text-primary transition">Researchers</a>
+                    <a href="#program" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Try Program</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Utilizing Artificial Intelligence to Optimize Chayote (Sechium Edule) Growth and Production</h1>
+<p class="text-xl mb-8">Our advanced algorithms analyze soil conditions, weather patterns, and plant health to optimize your Sechium Edule production like never before.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#program" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition text-center">Try Our AI Program</a>
+                        <a href="#research" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition text-center">Read Research Paper</a>
+</div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/agriculture/640x360/42" alt="AI analyzing chayote plants" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Key Features</h2>
+                <p class="text-lg max-w-2xl mx-auto">Our AI system provides comprehensive solutions for chayote cultivation challenges</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-light p-8 rounded-xl transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="activity" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Pest Infestation Detection</h3>
+                    <p class="text-dark">Early identification of pests with advanced image recognition technology to prevent crop damage.</p>
+                </div>
+                <div class="feature-card bg-light p-8 rounded-xl transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="bar-chart-2" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">AI-based Suggestions</h3>
+                    <p class="text-dark">Personalized cultivation recommendations based on real-time weather, soil, and plant health data.</p>
+                </div>
+                <div class="feature-card bg-light p-8 rounded-xl transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Disease Detection</h3>
+                    <p class="text-dark">Early diagnosis of common chayote diseases with immediate treatment recommendations.</p>
+                </div>
+            </div>
+</div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">How It Works</h2>
+                <p class="text-lg max-w-2xl mx-auto">Our simple 4-step process to optimize your chayote production</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Install Sensors</h3>
+                    <p>Place our IoT devices in your field to collect real-time data.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Upload Data</h3>
+                    <p>Our system automatically processes field information.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">AI Analysis</h3>
+                    <p>Machine learning algorithms generate customized recommendations.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Implement</h3>
+                    <p>Receive actionable insights to improve your cultivation practices.</p>
+                </div>
+            </div>
+            <div class="mt-16 flex justify-center">
+                <img src="http://static.photos/technology/1024x576/7" alt="AI analysis process diagram" class="rounded-lg shadow-lg max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+<!-- Research Section -->
+    <section id="research" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Read more on our research paper!</h2>
+                    <p class="text-lg mb-8">Read more on how we deliberate the increase of growth and production and how it helps farmers make more timely and effective management decisions.</p>
+                    <a href="#" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition inline-block">Read Research Paper</a>
+</div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/science/640x360/5" alt="Scientific research papers" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="http://static.photos/technology/640x360/8" alt="AI program interface" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Chayote Farm?</h2>
+                    <p class="text-lg mb-8">Our AI program is available for farms of all sizes. Start with our free trial to see the difference data-driven farming can make.</p>
+                    <div class="space-y-4">
+                        <a href="#" class="block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition text-center">Start Free Trial</a>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Researchers Section -->
+    <section id="researchers" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">About the Researchers</h2>
+                <p class="text-lg max-w-2xl mx-auto">Meet the team behind the AI technology revolutionizing chayote cultivation</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+                <div class="researcher-card bg-light p-6 rounded-xl text-center transition duration-300">
+                    <div class="w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://huggingface.co/spaces/santothetiago/chayote-ai-cultivator-pro/resolve/main/images/48861967-0127-4c2d-bdb1-d415138666b6.jpg" alt="Rylle Santiago Elijah I. Zapanta" class="w-full h-full object-cover transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-semibold">Rylle Santiago Elijah I. Zapanta</h3>
+                    <p class="text-dark">Lead Researcher</p>
+                </div>
+                
+                <div class="researcher-card bg-light p-6 rounded-xl text-center transition duration-300">
+                    <div class="w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://huggingface.co/spaces/santothetiago/chayote-ai-cultivator-pro/resolve/main/images/Untitled design (7).png" alt="Julio Miguel C. Gurrea" class="w-full h-full object-cover transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-semibold">Julio Miguel C. Gurrea</h3>
+                    <p class="text-dark">Member | Researcher</p>
+                </div>
+                
+                <div class="researcher-card bg-light p-6 rounded-xl text-center transition duration-300">
+                    <div class="w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://huggingface.co/spaces/santothetiago/chayote-ai-cultivator-pro/resolve/main/images/Untitled design (8).png" alt="John Christopher L. Yamit" class="w-full h-full object-cover transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-semibold">John Christopher L. Yamit</h3>
+                    <p class="text-dark">Member | Researcher</p>
+                </div>
+</body>
+</html>
